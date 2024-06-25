@@ -111,7 +111,7 @@ const Navbar = () => {
               <li className='px-12 '><Link href="">commercial spaces wall tiles</Link></li>
            </ul>
           </li>
-          <li  className='text-xl px-12  xl:text-sm text-[#D0C9C0]'><Link onMouseEnter={handleMouseEnterFloor} onMouseLeave={handleMouseLeaveFloor} href="/floortiles" className=''>Floor tiles</Link>
+          <li onClick={handleSubmenuFloorClick} className='text-xl px-12  xl:text-sm text-[#D0C9C0]'><Link onMouseEnter={handleMouseEnterFloor} onMouseLeave={handleMouseLeaveFloor} href="/floortiles" className=''>Floor tiles</Link>
           <ul className={subMenuFloorTiles ? 'w-[100%] h-[100vh] bg-[#272727] absolute top-0 left-0 flex flex-col justify-start gap-7  lg:top-[80px]  lg:h-[50vh]': 'hidden'}>
               <div className='w-[100%] px-2 py-5 flex  justify-between'>
               <button onClick={handleSubmenuFloorClick}  className='w-[35px] lg:hidden h-[35px]'>
@@ -131,7 +131,7 @@ const Navbar = () => {
           </li>
           <li className='text-xl xl:text-sm px-12 text-[#D0C9C0]'><Link href="/specialtiles">Special tiles</Link>
           </li>
-          <li  className='text-xl px-12 xl:text-sm text-[#D0C9C0]'>
+          <li onClick={handleSubmenuExpertCornerClick}  className='text-xl px-12 xl:text-sm text-[#D0C9C0]'>
             <Link onMouseEnter={handleMouseEnterExpertCorner} onMouseLeave={handleMouseLeaveExpertCorner} href="/expertcorner">Expert corner</Link>
             <ul  className={subMenuExpertCorner ? 'w-[100%] h-[100vh] bg-[#272727] absolute top-0 left-0 flex flex-col justify-start gap-7  lg:top-[80px]  lg:h-[50vh]': 'hidden'}>
               <div className='w-[100%] px-2 py-5 flex  justify-between'>
