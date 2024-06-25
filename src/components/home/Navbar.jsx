@@ -8,9 +8,10 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faXmark } from '@fortawesome/free-solid-svg-icons';
 import { faAngleLeft } from '@fortawesome/free-solid-svg-icons';
 import { useState } from 'react';
+import UseIsDesktop from '@/hooks/UseisDesktop';
 
 const Navbar = () => {
-
+  const isDesktop = UseIsDesktop()
 
     const [isOpen, setIsOpen] = useState(false)
     const [subMenuWallTiles, setSubMenuWallTiles] = useState(false)
@@ -20,7 +21,7 @@ const Navbar = () => {
       setIsOpen(!isOpen)
     }
 //handle on mouse enter
-    const handleMouseEnterWall = () => {
+  const handleMouseEnterWall = () => {
         setSubMenuWallTiles(true)
       
     }
@@ -45,16 +46,23 @@ const Navbar = () => {
 
 
     //handle button click
-    const handleSubmenuWallClick = () => {
+  const handleSubmenuWallClick = () => {
+    if (!isDesktop) {
       setSubMenuWallTiles(!subMenuWallTiles)
+      }
+     
     }
   
     const handleSubmenuFloorClick = () => {
-      setSubMenuFloorTiles(!subMenuFloorTiles)
+      if (!isDesktop) {
+        setSubMenuFloorTiles(!subMenuFloorTiles)
+      }
     }
   
     const handleSubmenuExpertCornerClick = () => {
-      setSubMenuExpertCorner(!subMenuExpertCorner)
+      if (!isDesktop) {
+        setSubMenuExpertCorner(!subMenuExpertCorner)
+      }
     }
 
   return (
@@ -72,7 +80,7 @@ const Navbar = () => {
             <FontAwesomeIcon icon={faXmark} className=' text-[#D0C9C0] text-2xl'/>
         </button>
           </div>
-          <li  className='text-xl px-12 pt-2  xl:text-sm lg:px-12 lg:py-0  text-[#D0C9C0]'><Link onMouseLeave={handleMouseLeaveWall} onMouseEnter={handleMouseEnterWall} href="/walltiles" className=''>Wall tiles</Link>
+          <li onClick={handleSubmenuWallClick} className='text-xl px-12 pt-2  xl:text-sm lg:px-12 lg:py-0  text-[#D0C9C0]'><Link onMouseLeave={handleMouseLeaveWall} onMouseEnter={handleMouseEnterWall} href="/walltiles" className=''>Wall tiles</Link>
             <ul className={subMenuWallTiles ? 'w-[100%] h-[100vh] bg-[#272727] absolute top-0 left-0 flex flex-col justify-start gap-7 lg:top-[80px]  lg:h-[50vh]': 'hidden'}>
               <div className='w-[100%] px-2 py-5 flex  justify-between'>
               <button onClick={handleSubmenuWallClick}  className='w-[35px] lg:hidden h-[35px]'>
