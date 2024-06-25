@@ -49,6 +49,7 @@ const Navbar = () => {
   const handleSubmenuWallClick = () => {
     if (!isDesktop) {
       setSubMenuWallTiles(!subMenuWallTiles)
+      console.log("Hello mike")
       }
      
     }
