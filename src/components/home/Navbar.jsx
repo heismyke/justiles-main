@@ -29,10 +29,14 @@ const Navbar = () => {
       
     }
     const handleMouseEnterFloor = () => {
+      if (isDesktop) {
         setSubMenuFloorTiles(true)
+       }
     }
     const handleMouseEnterExpertCorner = () => {
+      if (isDesktop) {
         setSubMenuExpertCorner(true)
+        }
     }
 
 // handle on mouse leave
@@ -43,10 +47,14 @@ const Navbar = () => {
        
     }
     const handleMouseLeaveFloor = () => {
+      if (isDesktop) {
         setSubMenuFloorTiles(false)
+        }
     }
     const handleMouseLeaveExpertCorner = () => {
+      if (isDesktop) {
         setSubMenuExpertCorner(false)
+        }
     }
 
 
