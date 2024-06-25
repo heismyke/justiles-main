@@ -66,7 +66,7 @@ const Navbar = () => {
               <p className='text-[#D0C9C0] tracking-[10px] font-normal'>JUSTILES</p>
                 </Link>
           </div>
-        <ul className={isOpen ? 'w-[100%] bg-[#5F7161] h-[100vh] absolute top-0 left-0 flex flex-col justify-start gap-7' : 'hidden  lg:flex lg:flex-row'}>
+        <ul className={isOpen ? 'w-[100%] bg-[#5F7161] h-[100vh] z-50 absolute top-0 left-0 flex flex-col justify-start gap-7' : 'hidden  lg:flex lg:flex-row'}>
           <div className='w-[100%] h-[20px] px-5 py-5 flex lg:hidden justify-end'>
           <button onClick={handleClick}  className='w-[35px] h-[35px]'>
             <FontAwesomeIcon icon={faXmark} className=' text-[#D0C9C0] text-2xl'/>
