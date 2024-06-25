@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
+import { Suspense } from 'react';
 
 const images = [
     '/images/banner1.jpg',
@@ -26,6 +27,7 @@ const Carousel = () => {
                  style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
                 {images.map((src, index) => (
                     <div key={index} className="relative min-w-full h-[500px] lg:h-[800px] xl:h-[1000px]">
+                        <Suspense>
                         <Image
                             src={src}
                             alt={`Slide ${index + 1}`}
@@ -35,6 +37,7 @@ const Carousel = () => {
                             height={0}
                             className="w-full h-500"
                         />
+                        </Suspense>
                     </div>
                 ))}
             </div>
