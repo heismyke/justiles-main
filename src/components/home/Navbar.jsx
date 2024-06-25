@@ -8,7 +8,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faXmark } from '@fortawesome/free-solid-svg-icons';
 import { faAngleLeft } from '@fortawesome/free-solid-svg-icons';
 import { useState } from 'react';
-import UseIsDesktop from '@/hooks/UseisDesktop';
+import UseIsDesktop from '@/hooks/UseIsDesktop';
+
 
 const Navbar = () => {
   const isDesktop = UseIsDesktop()
