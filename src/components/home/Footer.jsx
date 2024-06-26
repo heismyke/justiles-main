@@ -21,7 +21,7 @@ const Footer = () => {
         <div className='w-[100%] pb-4 xl:w-[90%] mx-auto flex flex-col lg:flex-col  px-5 md:px-5 xl:flex-row xl:justify-between'>
           <div className='w-[100%] lg:w-[100%] xl:w-[50%] py-5 '>
             <h6 className='text-2xl text-white tracking-[5px] pb-5 font-bold'>ABOUT</h6>
-            <p className='text-[#D0C9C0]'>Home is where the soul resides. 2022 has been a hard-hitting lesson where we were cooped up in our homes for days together and realized the importance of our personal space. The dreadful year made us understand how spending on house renovations is more of an investment than a splurge. While the ultimate vibe we all want for our homes is ‘Mi casa es su casa’, we all have our likes and dislikes. Here’s a fun insight on what kind of JUSTILES flooring and tiling you should go for based on your personality.</p>
+            <p className='text-[#D0C9C0] leading-[35px]'>Home is where the soul resides. 2022 has been a hard-hitting lesson where we were cooped up in our homes for days together and realized the importance of our personal space. The dreadful year made us understand how spending on house renovations is more of an investment than a splurge. While the ultimate vibe we all want for our homes is ‘Mi casa es su casa’, we all have our likes and dislikes. Here’s a fun insight on what kind of JUSTILES flooring and tiling you should go for based on your personality.</p>
           </div>
           <div className='w-[100%] lg:w-[100%]  xl:w-[45%]  lg:flex '>
             <div className='w-[100%] lg:w-[50%] py-5 '>
