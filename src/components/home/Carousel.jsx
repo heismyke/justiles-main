@@ -27,17 +27,14 @@ const Carousel = () => {
                  style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
                 {images.map((src, index) => (
                     <div key={index} className="relative min-w-full h-[500px] lg:h-[800px] xl:h-[800px]">
-                        <Suspense>
                         <Image
                             src={src}
                             alt={`Slide ${index + 1}`}
-                            layout="fill"
+                            fill
                             objectFit="cover"
-                            width={0}
-                            height={0}
+                            priority={index === 0}
                             className="w-full h-500 object-contain"
                         />
-                        </Suspense>
                     </div>
                 ))}
             </div>
