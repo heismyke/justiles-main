@@ -22,11 +22,11 @@ const Carousel = () => {
     }, []);
 
     return (
-        <div className="relative w-full h-[500px] bg-[#272727] lg:h-[800px] xl:h-[1000px] overflow-hidden">
+        <div className="relative w-full h-[500px] bg-[#272727] lg:h-[800px] xl:h-[800px] overflow-hidden">
             <div className="flex transition-transform duration-500 ease-in-out"
                  style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
                 {images.map((src, index) => (
-                    <div key={index} className="relative min-w-full h-[500px] lg:h-[800px] xl:h-[1000px]">
+                    <div key={index} className="relative min-w-full h-[500px] lg:h-[800px] xl:h-[800px]">
                         <Suspense>
                         <Image
                             src={src}
@@ -35,7 +35,7 @@ const Carousel = () => {
                             objectFit="cover"
                             width={0}
                             height={0}
-                            className="w-full h-500"
+                            className="w-full h-500 object-contain"
                         />
                         </Suspense>
                     </div>

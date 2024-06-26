@@ -149,7 +149,7 @@ const Navbar = () => {
            </ul>
           </li>
         </ul>
-          <button onClick={handleClick} className='w-[35px] h-[35px] flex items-center justify-center lg:hidden'>
+          <button onClick={handleClick} className='w-[35px] h-[35px]  flex items-center justify-center lg:hidden'>
             <FontAwesomeIcon icon={faBars} className=' text-[#D0C9C0] text-2xl'/>
         </button>
         
