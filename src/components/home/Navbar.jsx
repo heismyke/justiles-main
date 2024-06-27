@@ -62,6 +62,8 @@ const Navbar = () => {
   const handleSubmenuWallClick = () => {
     if (!isDesktop) {
       setSubMenuWallTiles(!subMenuWallTiles)
+      setIsOpen(false)
+      setSubMenuWallTiles(false)
       }
      
     }
@@ -69,12 +71,16 @@ const Navbar = () => {
     const handleSubmenuFloorClick = () => {
       if (!isDesktop) {
         setSubMenuFloorTiles(!subMenuFloorTiles)
+        setIsOpen(false)
+        setSubMenuFloorTiles(false)
       }
     }
   
     const handleSubmenuExpertCornerClick = () => {
       if (!isDesktop) {
         setSubMenuExpertCorner(!subMenuExpertCorner)
+        setIsOpen(false)
+        setSubMenuExpertCorner(false)
       }
     }
 
