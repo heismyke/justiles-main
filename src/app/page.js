@@ -1,6 +1,7 @@
 "use client"
 
 import Carousel from "@/components/home/Carousel";
+import FeaturedCategory from "@/components/home/FeaturedCategory";
 
 
 
@@ -12,7 +13,7 @@ export default function Home() {
        </h1>
       </div>
      <Carousel />
-
+    <FeaturedCategory/>
     </main>
   );
 }

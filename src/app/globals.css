@@ -3,3 +3,24 @@
 @tailwind utilities;
 
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
+
+.wall-tile-description{
+    padding-top: 10px;
+}
+.wall-tile-description em {
+    text-decoration: underline;
+}
+
+.floor-tile-description{
+    padding-top: 10px;
+}
+.floor-tile-description em {
+    text-decoration: underline;
+}
+
+.special-tile-description{
+    padding-top: 10px;
+}
+.special-tile-description em {
+    text-decoration: underline;
+}

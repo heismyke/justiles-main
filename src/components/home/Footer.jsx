@@ -53,11 +53,9 @@ const Footer = () => {
             </div>
           <div className='w-[100%] h-[70px] lg:w-[50%]  flex items-center gap-4'>
             {icons.map((icon, index) => (
-              <>
-                <div key={index} className='w-[40px] h-[40px] rounded-full bg-[#272727] flex items-center justify-center' >
-                <FontAwesomeIcon icon={icon} className='text-xl text-[#818a91]'/>
-                </div>
-              </>
+              <div key={index} className='w-[40px] h-[40px] rounded-full bg-[#272727] flex items-center justify-center' >
+              <FontAwesomeIcon icon={icon} className='text-xl text-[#818a91]'/>
+              </div>
                 ))}
             </div>
         </div>

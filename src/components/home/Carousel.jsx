@@ -30,10 +30,12 @@ const Carousel = () => {
                         <Image
                             src={src}
                             alt={`Slide ${index + 1}`}
-                            fill
-                            objectFit="cover"
-                            priority={index === 0}
-                            className="w-full h-500 object-contain"
+                            width={0}
+                            height={0}
+                            sizes='100vw'
+                            style={{objectFit: "cover"}}
+                            priority={true}
+                            className="w-full h-full object-contain"
                         />
                     </div>
                 ))}
