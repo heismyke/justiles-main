@@ -38,10 +38,10 @@ const Footer = () => {
             <div className='w-[100%]  lg:w-[50%] py-5 '>
             <h6 className='text-2xl text-white tracking-[5px] pb-5 font-bold'>QUICK LINKS</h6>
               <ul className='gap-5 flex flex-col  text-[#D0C9C0]'>
-                <li style={{textDecoration: "underline"}}><Link href="">Wall Tiles</Link></li>
-                <li style={{textDecoration: "underline"}}><Link href="">Floor Tiles</Link></li>
-                <li style={{textDecoration: "underline"}}><Link href="">Special Tiles</Link></li>
-                <li style={{textDecoration: "underline"}}><Link href="">Expert Corner</Link></li>
+                <li style={{textDecoration: "underline"}}><Link href="/walltiles">Wall Tiles</Link></li>
+                <li style={{textDecoration: "underline"}}><Link href="/floortiles">Floor Tiles</Link></li>
+                <li style={{textDecoration: "underline"}}><Link href="specialtiles">Special Tiles</Link></li>
+                <li style={{textDecoration: "underline"}}><Link href="/expertcorner">Expert Corner</Link></li>
               </ul>
               <button className='bg-[#D0C9C0] text-[#32353c]  h-[50px] px-5 rounded-lg mt-8'>Contact us</button>
             </div>
